@@ -1,0 +1,37 @@
+{
+  "name": "express-typescript-scaffolding",
+  "version": "1.0.0",
+  "description": "Express + TypeScript + Sequelize Scaffolding",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "prestart": "npm run compile",
+    "start": "node lib/main.js",
+    "test": "mocha --require ts-node/register test/**/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flandrade/express-typescript-scaffolding.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flandrade/express-typescript-scaffolding/issues"
+  },
+  "homepage": "https://github.com/flandrade/express-typescript-scaffolding#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/sequelize": "^4.27.25",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "dotenv-safe": "^6.0.0",
+    "express": "^4.16.3",
+    "sequelize": "^4.38.0"
+  }
+}
