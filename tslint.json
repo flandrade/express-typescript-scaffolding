@@ -10,7 +10,9 @@
     "no-console": false,
     "no-shadowed-variable": false,
     "no-unused-expression": false,
+    "no-var-keyword": false,
     "no-var-requires": false,
+    "object-literal-sort-keys": false,
     "trailing-comma": false,
     "variable-name": [true, "allow-leading-underscore"]
   },

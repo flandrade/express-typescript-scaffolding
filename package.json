@@ -4,11 +4,13 @@
   "description": "Express + TypeScript + Sequelize Scaffolding",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf {app,src}/**/*.{js,d.ts,js.map} app.{js,d.ts,js.map}",
+    "clean": "rimraf {app,src,migrations}/**/*.{js,d.ts,js.map} index.{js,d.ts,js.map}",
     "compile": "tsc",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "presequelize": "npm run compile",
     "prestart": "npm run compile",
-    "start": "node app.js",
+    "sequelize": "sequelize",
+    "start": "node index.js",
     "test": "mocha --require ts-node/register test/**/*.test.ts"
   },
   "repository": {
@@ -35,7 +37,11 @@
   "dependencies": {
     "dotenv-safe": "^6.0.0",
     "express": "^4.16.3",
+    "path": "^0.12.7",
+    "pg": "^7.4.3",
     "sequelize": "^4.38.0",
-    "source-map-support": "^0.5.9"
+    "sequelize-cli": "^4.1.1",
+    "source-map-support": "^0.5.9",
+    "walk-sync": "^0.3.3"
   }
 }

@@ -1,0 +1,12 @@
+var path = require("path");
+var debug = require("debug");
+
+var dotenv = require("dotenv").config({
+  path: process.env.NODE_ENV === "test" ? ".env.test" : ".env"
+});
+
+module.exports = {
+  "config": path.resolve("config", "database.json"),
+  "logging": debug("sequelize"),
+  "migrations-path": path.resolve("migrations")
+};
