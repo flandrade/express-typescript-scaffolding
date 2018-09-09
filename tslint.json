@@ -11,7 +11,8 @@
     "no-shadowed-variable": false,
     "no-unused-expression": false,
     "no-var-requires": false,
-    "trailing-comma": false
+    "trailing-comma": false,
+    "variable-name": [true, "allow-leading-underscore"]
   },
   "rulesDirectory": []
 }

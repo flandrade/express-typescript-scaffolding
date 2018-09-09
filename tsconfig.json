@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "declaration": true,
+    "baseUrl": ".",
     "module": "commonjs",
-    "outDir": "lib",
+    "moduleResolution": "node",
+    "noUnusedParameters": true,
     "strict": true,
-    "target": "ES2015"
+    "sourceMap": true,
+    "target": "es6"
   },
-  "include": [
-    "src/**/*"
+  "exclude": [
+    "test/**/*"
   ]
 }
