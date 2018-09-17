@@ -5,10 +5,6 @@ import { ListUserParams } from "../model";
 
 type RawInput = string;
 
-interface ListUserRaw {
-  limit: string;
-}
-
 type ParamMapper = {
   [P in keyof ListUserParams]: (input: RawInput) => ListUserParams[P];
 };
@@ -18,8 +14,8 @@ const paramMapper: ParamMapper = {
 };
 
 export default function toListParams(
-  rawParams: ListUserRaw
-  ): ListUserParams {
+  rawParams: object
+): ListUserParams {
   const validParams = pick(Object.keys(paramMapper), rawParams);
 
   const params = mapObjIndexed((value, param) => {

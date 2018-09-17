@@ -14,7 +14,7 @@ const MODEL_PATHS: string[] = walkSync(__dirname, {
   globs: ["**/*/model.js"]
 });
 
-const POOL_SEQUELIZE: Sequelize.PoolOptions = {
+const POOL: Sequelize.PoolOptions = {
   max: 2,
   min: 0,
   idle: 20000,
@@ -47,6 +47,6 @@ function loadModels(
     }), {} as Models);
 }
 
-const sequelize: Sequelize.Sequelize = createSequelize(config, POOL_SEQUELIZE);
+const sequelize: Sequelize.Sequelize = createSequelize(config, POOL);
 
 export const models = loadModels(sequelize);

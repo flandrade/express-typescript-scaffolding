@@ -6,12 +6,10 @@ import { Request, Response, Router } from "express";
 
 const router = Router();
 
-router.get("/users", function(req: Request, res: Response, _next) {
+router.get("/users", function(req: Request, res: Response) {
   getUserList(toListParams(req.params))
     .then(toListUsers)
-    .then(response => {
-      res.json(response);
-    });
+    .then(res.json);
 });
 
 export default router;
