@@ -1,9 +1,17 @@
-import * as express from "express";
+import toListParams from "./decorator/list-users";
+import getUserList from "./operation/list-users";
+import toListUsers from "./presenter/list-users";
 
-const router = express.Router();
+import { Request, Response, Router } from "express";
 
-router.get("/", function(_req, res, _next) {
-  res.json({ message: "test" });
+const router = Router();
+
+router.get("/users", function(req: Request, res: Response, _next) {
+  getUserList(toListParams(req.params))
+    .then(toListUsers)
+    .then(response => {
+      res.json(response);
+    });
 });
 
 export default router;

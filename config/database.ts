@@ -1,4 +1,5 @@
 export interface Config {
+  logging: boolean,
   use_env_variable: string;
 }
 

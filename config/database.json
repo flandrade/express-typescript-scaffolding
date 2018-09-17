@@ -3,6 +3,7 @@
     "use_env_variable": "DATABASE_URI"
   },
   "test": {
+    "logging": false,
     "use_env_variable": "DATABASE_URI"
   },
   "production": {

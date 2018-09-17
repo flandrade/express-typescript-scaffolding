@@ -3,8 +3,10 @@
     "baseUrl": ".",
     "module": "commonjs",
     "moduleResolution": "node",
+    "noImplicitAny": false,
     "noUnusedParameters": true,
     "strict": true,
+    "strictNullChecks": false,
     "sourceMap": true,
     "target": "es6"
   },
