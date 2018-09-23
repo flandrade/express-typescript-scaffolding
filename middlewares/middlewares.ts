@@ -1,6 +1,6 @@
 import { Application } from "express";
 
-import router from "./middlewares/routers";
+import router from "./routers";
 
 type Middleware = (app: Application) => Application;
 

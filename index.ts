@@ -3,7 +3,7 @@ require("dotenv-safe").config();
 
 import * as express from "express";
 
-import middlewares from "./app/middlewares";
+import middlewares from "./middlewares/middlewares";
 
 const app: express.Application = middlewares(express());
 
