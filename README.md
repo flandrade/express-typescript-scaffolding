@@ -1,5 +1,7 @@
 # An opinionated scaffolding: Express + TypeScript + Sequelize
 
+[![CircleCI](https://circleci.com/gh/flandrade/express-typescript-scaffolding.svg?style=svg)](https://circleci.com/gh/flandrade/express-typescript-scaffolding)
+
 An opinionated scaffolding to build an application with Express, TypeScript and Sequelize.
 
 - **[TypeScript](https://www.typescriptlang.org/)** is a superset of JavaScript
