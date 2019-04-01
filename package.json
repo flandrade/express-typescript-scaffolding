@@ -8,6 +8,7 @@
     "compile": "tsc",
     "compile-migrations": "cd migrations/ && tsc",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "migrate": "npm run compile-migrations && sequelize db:migrate",
     "presequelize": "npm run compile",
     "prestart": "npm run compile",
     "sequelize": "sequelize",
