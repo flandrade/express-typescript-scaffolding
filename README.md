@@ -55,8 +55,7 @@ copy the `.env.example` to `.env` and define the variable
 $ cp .env.example .env
 ```
 
-This scaffolding requires the database `scaffolding_development` URI for
-developemnt. Here an example:
+This scaffolding requires the database `scaffolding_development` URI for development:
 
 ```
 DATABASE_URI=postgresql://<user>:<password>@localhost/scaffolding_development
