@@ -18,7 +18,7 @@ is the factory library to generate fake data for tests.
   - [bluebird](http://bluebirdjs.com/docs/getting-started.html): a third party
 promise library.
   - [dotenv-safe](https://github.com/rolodato/dotenv-safe): load environment
-  variables from .env and ensure they are all presen.t
+  variables from .env and ensure they are all present.
 
 ## Getting started
 

@@ -1,6 +1,6 @@
 {
   "name": "express-typescript-scaffolding",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Express + TypeScript + Sequelize Scaffolding",
   "main": "index.js",
   "scripts": {
@@ -52,5 +52,6 @@
     "sequelize": "^4.43.1",
     "sequelize-cli": "^5.4.0",
     "source-map-support": "^0.5.11",
-    "walk-sync": "^0.3.4"  }
+    "walk-sync": "^0.3.4"
+  }
 }

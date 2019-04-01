@@ -21,6 +21,5 @@ export default function toListParams(
   const params = mapObjIndexed((value, param) => {
     return paramMapper[param](value);
   }, validParams);
-
   return params as ListUserParams;
 }
