@@ -9,7 +9,7 @@ const router = Router();
 router.get("/users", function(req: Request, res: Response) {
   getUserList(toListParams(req.params))
     .then(toListUsers)
-    .then(res.json);
+    .then(result => res.json(result));
 });
 
 export default router;
